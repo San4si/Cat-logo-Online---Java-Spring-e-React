@@ -26,6 +26,7 @@ public class Produto {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private String title;
+    private String description;
     private String image;
     private Double price;
 
@@ -33,5 +34,6 @@ public class Produto {
         this.image = data.image();
         this.price = data.price();
         this.title = data.title();
+        this.description = data.description();
     }
 }
